@@ -69,15 +69,14 @@ while True:
 # and None objects that are stored when an error is received
 for n in aux_number_list:
     if n not in ([], None):
-    #if n != [] and n != None:
         number_list.extend(n)
 
 print(f"Requests finished. {len(number_list)} numbers were obtained.")
-print("Ordering numbers...")
+print("Sorting numbers...")
 
 ordered_number_list = sorting_script.run(number_list)
 
-print("Ordering finished.")
+print("Sorting finished.")
 print("Creating objects on the database...")
 
 populate.create_objects(ordered_number_list)
