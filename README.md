@@ -76,15 +76,21 @@
 # API
 
 After starting the server, access localhost:8000/ and it will show the numbers/ endpoint.
-This endpoint returns the first list of 100 ordered numbers, and also the
+This endpoint returns the first list of 100 ordered numbers, and also
 the link for the next endpoint.
-Every array can be requested by the following endpoints
+Every array can be requested by the following endpoints:
 
 ###### http://localhost:8000/numbers/{int} -> int the the object id
 
 ###### http://localhost:8000/numbers/?offset={int} -> int the page number, every page returns only one array.
 
 ###### http://localhost:8000/numbers/?limit={x}&offset={int} -> int the the page number and x is the number of arrays returned from this endpoint, starting from int
+
+The sorting is done from smallest to largest, so the first endpoint:
+###### http://localhost:8000/numbers/1
+will contain the array with the 100 smallest numbers, and the last endpoint:
+###### http://localhost:8000/numbers/{int} -> int depends on how many requests were successfull during the execution of challenge.py
+will contain the array with the 100 largest numbers.
 
 The documentation is also available at http://localhost:8000/doc
 
