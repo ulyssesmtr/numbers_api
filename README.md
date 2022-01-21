@@ -66,7 +66,7 @@
 
         python challenge.py
 
-        This process may take a few seconds.
+   This process may take a few seconds.
 
 ###### 7. Start the server by runnning the following command:
 
