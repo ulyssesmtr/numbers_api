@@ -80,11 +80,11 @@ This endpoint returns the first list of 100 ordered numbers, and also
 the link for the next endpoint.
 Every array can be requested by the following endpoints:
 
-###### http://localhost:8000/numbers/{int} -> int the the object id
+###### http://localhost:8000/numbers/{int} -> int is the object id
 
-###### http://localhost:8000/numbers/?offset={int} -> int the page number, every page returns only one array.
+###### http://localhost:8000/numbers/?offset={int} -> int is page number, every page returns only one array.
 
-###### http://localhost:8000/numbers/?limit={x}&offset={int} -> int the the page number and x is the number of arrays returned from this endpoint, starting from int
+###### http://localhost:8000/numbers/?limit={x}&offset={int} -> int is the page number and x is the number of arrays returned from this endpoint, starting from int
 
 The sorting is done from smallest to largest, so the first endpoint:
 ###### http://localhost:8000/numbers/1
