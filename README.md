@@ -39,7 +39,7 @@
 
 ###### 1. Download the zip and extract it to the desired folder.
 
-###### 2. Open the project folder with the terminal and and run the following command:
+###### 2. Open the project folder with the terminal and run the following command:
 
         py -3.9 -m venv venv
 
